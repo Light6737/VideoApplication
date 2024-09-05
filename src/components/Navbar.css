@@ -1,0 +1,81 @@
+/* Navbar.css */
+
+.header {
+    background-color: #000000;
+
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: 0.3s ease;
+  }
+  
+  .header-bg {
+    background: #000;
+  }
+  
+  .header h1 {
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    padding-right: 50px;
+  }
+  
+  .nav-menu li {
+    margin: 0 20px;
+  }
+  
+  .nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s ease;
+  }
+  
+  .nav-menu li a:hover {
+    color: #f1f1f1;
+  }
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  
+    .nav-menu {
+      position: absolute;
+      top: 80px;
+      left: -100%;
+      width: 100%;
+      height: calc(100vh - 80px);
+      background: #000;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s ease;
+    }
+  
+    .nav-menu.active {
+      left: 0;
+    }
+  
+    .nav-menu li {
+      margin: 20px 0;
+    }
+  }

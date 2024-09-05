@@ -1,0 +1,124 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #2d3e44, #4b6b7a);
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container, .dashboard, .history, .video-player {
+  background: #abd3f1;
+  padding: 40px 50px; 
+  border-radius: 12px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+  width: 450px; 
+  margin: 20px auto;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+form div, form select {
+  margin-bottom: 15px;
+}
+
+input[type="text"], input[type="password"], input[type="file"], select {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px; 
+  box-sizing: border-box; 
+}
+
+input[type="file"] {
+  padding: 8px; 
+  font-size: 14px; 
+}
+
+button {
+  width: 100%;
+  padding: 12px; 
+  background-color: #0077bc;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px; 
+}
+
+button:hover {
+  background-color: #185a9d;
+}
+
+.video-player-buttons button {
+  margin-right: 10px;
+  margin-top: 15px;
+}
+
+.video-player, .history {
+  background: #abd3f1;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  margin: 20px auto;
+}
+
+.video-history-item {
+  background: #abd3f1;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.video-history-item video {
+  max-width: 150px;
+  border-radius: 8px;
+}
+
+.video-history-item div {
+  display: flex;
+  align-items: center;
+}
+
+.history-buttons button {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard, .history, .video-player {
+    width: 90%;
+  }
+
+  .login-container {
+    width: 90%; 
+  }
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #43cea2;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #185a9d;
+}
